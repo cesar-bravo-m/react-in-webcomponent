@@ -1,6 +1,6 @@
 1. Construir webcomponents
    ```bash
-   git clone https://github.com/cesar-bravo-m/react-in-webcomponent
+   git clone https://github.com/cesar-bravo-m/webcomponent-react-vue-angular
    cd remote-react
    npm install
    npm run build
