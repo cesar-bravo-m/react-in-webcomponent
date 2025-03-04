@@ -7,14 +7,11 @@ import { getStore } from '../store';
 class TodoStatsWebComponent extends HTMLElement {
   constructor() {
     super();
-    // Create a shadow DOM
     this.attachShadow({ mode: 'open' });
     
-    // Create a container for our React app
     this.container = document.createElement('div');
     this.shadowRoot.appendChild(this.container);
     
-    // Add some basic styling to the shadow DOM
     const style = document.createElement('style');
     style.textContent = `
       :host {
@@ -30,10 +27,8 @@ class TodoStatsWebComponent extends HTMLElement {
   }
 
   connectedCallback() {
-    // Get the shared Redux store
     const store = getStore();
     
-    // Render the React component into the shadow DOM when the element is added to the page
     ReactDOM.render(
       <Provider store={store}>
         <TodoStats />
@@ -43,12 +38,10 @@ class TodoStatsWebComponent extends HTMLElement {
   }
 
   disconnectedCallback() {
-    // Clean up React when the element is removed from the page
     ReactDOM.unmountComponentAtNode(this.container);
   }
 }
 
-// Define the custom element
 customElements.define('todo-stats', TodoStatsWebComponent);
 
 export default TodoStatsWebComponent; 

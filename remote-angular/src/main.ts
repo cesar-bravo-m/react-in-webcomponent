@@ -13,7 +13,6 @@ class AngularCounterElement extends HTMLElement {
   }
 
   connectedCallback() {
-    // Add event listeners when the element is added to the DOM
     const incrementBtn = this.shadow.querySelector('.btn-increment');
     const decrementBtn = this.shadow.querySelector('.btn-decrement');
     const resetBtn = this.shadow.querySelector('.btn-reset');
@@ -24,7 +23,6 @@ class AngularCounterElement extends HTMLElement {
   }
 
   disconnectedCallback() {
-    // Clean up event listeners when the element is removed from the DOM
     const incrementBtn = this.shadow.querySelector('.btn-increment');
     const decrementBtn = this.shadow.querySelector('.btn-decrement');
     const resetBtn = this.shadow.querySelector('.btn-reset');
@@ -140,12 +138,10 @@ class AngularCounterElement extends HTMLElement {
     this.shadow.appendChild(style);
     this.shadow.appendChild(container);
     
-    // Store reference to count display for updates
     this.countDisplay = this.shadow.querySelector('.count');
   }
 }
 
-// Register the custom element
 customElements.define('angular-counter', AngularCounterElement);
 
 console.log('Angular-Style Counter Web Component registered successfully!'); 
