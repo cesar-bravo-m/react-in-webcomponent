@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .demo-section {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    .shared-state-demo {
+      background-color: #fffbea;
+      border: 1px dashed #f39c12;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>WebComponents con React+Redux</h1>
+  
+  <div class="container">
+    <div class="demo-section">
+      <div class="shared-state-demo">
+        <p>WebComponent &lt;todo-stats&gt;</p>
+        <todo-stats></todo-stats>
+      </div>
+      
+      <div class="shared-state-demo">
+        <p>WebComponent &lt;react-todo-app&gt;</p>
+        <react-todo-app></react-todo-app>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 
