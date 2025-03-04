@@ -8,6 +8,10 @@
    cd remote-vue
    npm install
    npm run build
+   cd ..
+   cd remove-angular
+   npm install
+   npm run build
    ```
 
 2. Abrir la aplicación:
