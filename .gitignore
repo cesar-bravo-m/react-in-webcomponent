@@ -4,6 +4,8 @@
 /remote-vue/node_modules
 /remote-react/dist
 /remote-vue/dist
+/remote-angular/dist
+/remote-angular/node_modules
 /.pnp
 .pnp.js
 
