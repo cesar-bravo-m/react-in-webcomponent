@@ -1,7 +1,9 @@
 # Dependencies
 /node_modules
 /remote-react/node_modules
+/remote-vue/node_modules
 /remote-react/dist
+/remote-vue/dist
 /.pnp
 .pnp.js
 

@@ -56,6 +56,11 @@
       margin-bottom: 20px;
     }
   </style>
+  <!-- Define Vue globals before loading Vue components -->
+  <script>
+    window.__VUE_PROD_DEVTOOLS__ = false;
+    window.__VUE_OPTIONS_API__ = true;
+  </script>
 </head>
 <body>
   <header>
@@ -74,8 +79,14 @@
         <p>Componente remoto &lt;react-todo-app&gt;</p>
         <react-todo-app></react-todo-app>
       </div>
+      
+      <div class="card">
+        <p>Componente remoto &lt;vue-counter&gt;</p>
+        <vue-counter></vue-counter>
+      </div>
     </div>
     
-  <script src="../wc-components-lib/dist/wc-components.js"></script>
+  <script src="./remote-react/dist/wc-components.js"></script>
+  <script src="./remote-vue/dist/vue-components.js"></script>
 </body>
 </html> 
